@@ -1,5 +1,6 @@
 from sympy import *
 x = Symbol('x')
+y = Symbol('y')
  #make the derivative of cos(x)*e ^ x
 ans1 = diff(cos(x)*exp(x), x)
 print("The derivative of the  sin(x)*e ^ x : ", ans1)
@@ -16,3 +17,5 @@ print("limit is : ", ans4)
 # Solve quadratic equation like, example : x ^ 2?2 = 0
 ans5 = solve(x**2 - 2, x)
 print("roots are : ", ans5)
+ans6 = solve(x**3+3*(x**2)*y+3*x*y**2+y**3-(x+y)**3,x,y)
+print("roots are : ", ans6)
